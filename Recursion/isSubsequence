@@ -1,0 +1,11 @@
+#leetcode 392
+
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        s1=0
+        p1=0
+        while s1<len(s) and p1<len(t):
+            if(s[s1]==t[p1]):
+                s1+=1 
+            p1+=1 
+        return s1==len(s)
